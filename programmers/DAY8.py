@@ -19,3 +19,16 @@ def solution(array, n):
         temp.append( abs(n-i) )
 
     return array[temp.index(min(temp))]
+
+# 암호해독
+# 내 풀이
+def solution(cipher, code):
+    answer = ''
+    for i in range(code,len(cipher)+1):
+        if i % code == 0:
+            answer += cipher[i-1]
+    return answer
+
+# 다른 사람 풀이
+def solution(cipher, code):
+    return cipher[code-1::code]
