@@ -15,3 +15,18 @@ def solution(numbers):
         numbers = numbers.replace(word, str(i))
         i+=1
     return int(numbers)
+
+# 배열의 유사도
+# 내 풀이
+def solution(s1, s2):
+    answer = 0
+    for word in s1:
+        if word in s2:
+            answer += 1
+        else:
+            continue
+    return answer
+
+# 다른 풀이
+def solution(s1, s2):
+    return len(set(s1)&set(s2))
