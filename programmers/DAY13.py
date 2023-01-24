@@ -13,3 +13,6 @@ def solution(my_str, n):
 # 중복된 숫자 개수
 def solution(array, n):
     return array.count(n)
+
+
+# 직사각형 넓이 구하기
