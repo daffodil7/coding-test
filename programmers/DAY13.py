@@ -9,3 +9,7 @@ def solution(my_str, n):
 # 간단풀이
 def solution(my_str, n):
     return [my_str[i: i + n] for i in range(0, len(my_str), n)]
+
+# 중복된 숫자 개수
+def solution(array, n):
+    return array.count(n)
